@@ -17,31 +17,38 @@ number_students = 20
 string_teachers = "4"
 numberDogs = 0
 
+
 # EXAMPLE: print the result of the comparison: is number_seachers greater than number_students?
 puts "Is number_teachers greater than number_students?", number_teachers > number_students
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
 # this should print: true
+puts "is number_teachers less than number_students?", number_teachers < number_students
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
 # this should print: false
+puts "Is number_teachers equal to string_teachers?", number_teachers == string_teachers
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
 # this should print: true
+puts "Is number_teachers not equal to number_students?", number_teachers != number_students
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
 # this should print: true
+puts "Is number_students greater than or equal to 20?", number_students >= 20
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
 # this should print: false
+puts "Is number_students greater than or equal to 21?", number_students >= 21
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
 # this should print: true
+puts "Is number_students less than or equal to 20?", number_students <= 20
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
 # this should print: true
-
+puts "Is number_students less than or equal to 21?", number_students <= 21
 
 #-------------------
 # PART 2: Articulating what you are doing
@@ -53,21 +60,22 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # Make sure YOU can explain it that way!
 
 puts 4 < 9
-#YOU DO: Explain.
+#This is telling the program to print if the value 4 is less than the value 9.
 
 books = 3
 puts 4 < books
-# YOU DO: Explain.
+# This is telling the program to print if the value 4 is less than the value 3, since books = 3.
 
 friends = 6
 siblings = 2
 puts friends > siblings
-# YOU DO: Explain.
+# Since friends = 6 and siblings =2 those variables = their designated number. It is telling the program to print if 
+# 6 is greater than 2.
 
 attendees = 9
 meals = 8
 puts attendees != meals
-# YOU DO: Explain.
+# With attendees set to 9 and meals set to 8, this is telling the program to print if 9 is not equal to 8.
 
 
 #-------------------
@@ -90,15 +98,15 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
-
+puts loves_to_play && "Is a puppy"
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: There was no value set for "is a puppy" so the output was simply "Is a puppy."
