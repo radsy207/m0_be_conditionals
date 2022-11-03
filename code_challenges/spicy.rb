@@ -1,7 +1,11 @@
-age=5
-def multiple_of_? 3
-if age == multiple_of_3?
+integer = 4
+
+if (integer%3).zero? == true && (integer%5).zero? == true
+    puts "FizzBuzz"
+elsif (integer%3).zero? == true
     puts "Fizz"
-elsif age == multiple_of_3?
+elsif (integer%5).zero? == true
     puts "Buzz"
+else 
+    puts "#{integer}"
 end
